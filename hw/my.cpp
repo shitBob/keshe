@@ -4,6 +4,9 @@
 #include "modify.h"
 #include<QLabel>
 #include"globalusermanager.h"
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlQueryModel>
 My::My(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::My)
@@ -27,11 +30,33 @@ My::My(QWidget *parent)
         this->query->hide();
         this->show();
     });
-    // QString username = GlobalDataManager::getInstance()->getUserDataBase();
-    // QString password = GlobalDataManager::getInstance()->getUserDataBase1();
-    // qDebug()<<username ;
-    // this->ui->label_4->setText(username);
-    // this->ui->label_5->setText(password);
+    QString username = GlobalDataManager::getInstance()->getUserDataBase();
+    QString password = GlobalDataManager::getInstance()->getUserDataBase1();
+    qDebug()<<username ;
+    qDebug()<<"666" ;
+   ui->label_4->setText(username);
+   ui->label_5->setText(password);
+    QSqlQueryModel *model = new QSqlQueryModel;
+    QSqlQuery query;
+    query.prepare("SELECT * FROM us_pa WHERE user_phone_num = (:value1)");
+    query.bindValue(":value1", username);
+
+    model->setQuery(query);
+
+    // if (model->lastError().isValid()) {
+    //     qDebug() << "Query Error: " << model->lastError().text();
+    //     return -1;
+    // }
+
+
+    // 创建视图并设置模型
+
+    // PassengerView->setModel(model);
+    // tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    // tableView->verticalHeader()->setVisible(false);
+    // tableView->show();
+
+
 }
 
 My::~My()
@@ -52,5 +77,27 @@ void My::on_look_clicked()
     qDebug()<<userphone ;
     ui->label_4->setText(username);
     ui->label_5->setText(userphone);
+    QSqlQueryModel *model = new QSqlQueryModel;
+    QSqlQuery query;
+    query.prepare("SELECT * FROM us_pa WHERE user_phone_num = (:value1)");
+    query.bindValue(":value1", userphone);
+    query.exec();
+    model->setQuery(query);
+
+    // if (model->lastError().isValid()) {
+    //     qDebug() << "Query Error: " << model->lastError().text();
+    //     return -1;
+    // }
+    if (!query.next()) {
+        qDebug() << "Query result is empty";
+    }
+
+    ui->PassengerView->setModel(model);
+    ui->PassengerView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->PassengerView->verticalHeader()->setVisible(false);
+    ui->PassengerView->show();
+
+
+
 }
 

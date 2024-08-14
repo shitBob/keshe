@@ -139,7 +139,7 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QTableView" name="tableView">
+   <widget class="QTableView" name="PassengerView">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -182,7 +182,7 @@
      <x>0</x>
      <y>0</y>
      <width>580</width>
-     <height>17</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>

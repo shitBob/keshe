@@ -2,6 +2,7 @@
 #include "EWIEGA46WW/moc_admin.cpp"
 #include "EWIEGA46WW/moc_booking.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
+#include "EWIEGA46WW/moc_manage_passenger.cpp"
 #include "EWIEGA46WW/moc_menu.cpp"
 #include "EWIEGA46WW/moc_modify.cpp"
 #include "EWIEGA46WW/moc_my.cpp"

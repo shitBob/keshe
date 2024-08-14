@@ -34,7 +34,7 @@ public:
     QPushButton *modify;
     QLabel *label_5;
     QLabel *label_6;
-    QTableView *tableView;
+    QTableView *PassengerView;
     QPushButton *back2;
     QLabel *label_4;
     QMenuBar *menubar;
@@ -78,9 +78,9 @@ public:
         label_6 = new QLabel(centralwidget);
         label_6->setObjectName("label_6");
         label_6->setGeometry(QRect(100, 80, 40, 16));
-        tableView = new QTableView(centralwidget);
-        tableView->setObjectName("tableView");
-        tableView->setGeometry(QRect(200, 10, 331, 301));
+        PassengerView = new QTableView(centralwidget);
+        PassengerView->setObjectName("PassengerView");
+        PassengerView->setGeometry(QRect(200, 10, 331, 301));
         back2 = new QPushButton(centralwidget);
         back2->setObjectName("back2");
         back2->setGeometry(QRect(60, 250, 80, 18));
@@ -90,7 +90,7 @@ public:
         My->setCentralWidget(centralwidget);
         menubar = new QMenuBar(My);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 580, 17));
+        menubar->setGeometry(QRect(0, 0, 580, 18));
         My->setMenuBar(menubar);
         statusbar = new QStatusBar(My);
         statusbar->setObjectName("statusbar");
