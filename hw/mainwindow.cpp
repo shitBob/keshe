@@ -18,6 +18,16 @@ MainWindow::MainWindow(QWidget *parent)
         this->page2->hide();
         this->show();
     });
+    this->a= new Admin;
+    connect(this->a,&Admin::back,[=](){
+        this->a->hide();
+        this->show();
+    });
+    this->r = new RegisterWindow;
+    connect(this->r,&RegisterWindow::back,[=](){
+        this->r->hide();
+        this->show();
+    });
     qDebug()<<QSqlDatabase::drivers();
     db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName("127.0.0.1");
@@ -31,21 +41,18 @@ MainWindow::MainWindow(QWidget *parent)
     {
         qDebug() <<"open success";
     }
-    // QString sql = "INSERT INTO user (user_phone_num, user_id_num,user_password, user_email, user_real_name, user_type, user_gender, user_address) "
-    //               "VALUES (:user_phone_num,:user_id_num, :user_password, :user_email, :user_real_name, :user_type, :user_gender, :user_address)";
+    // QString sql = "INSERT INTO user (user_phone_num, user_name,user_password, user_type) "
+    //               "VALUES (:user_phone_num,:user_name, :user_password, :user_type)";
 
     // // 准备查询
     // QSqlQuery query;
     // if (query.prepare(sql)) {
     //     // 绑定参数
-    //     query.bindValue(":user_phone_num", "12345678901");
-    //     query.bindValue(":user_id_num", "123");
-    //     query.bindValue(":user_password", "password123");
-    //     query.bindValue(":user_email", "user@example.com");
-    //     query.bindValue(":user_real_name", "张三");
-    //     query.bindValue(":user_type", 1);
-    //     query.bindValue(":user_gender", 1); // 假设1表示男性
-    //     query.bindValue(":user_address", "北京市朝阳区");
+    //     query.bindValue(":user_phone_num", "123456");
+    //     query.bindValue(":user_name", "123");
+    //     query.bindValue(":user_password", "123456");
+    //     query.bindValue(":user_type", "0");
+
 
     //     // 执行查询
     //     if (query.exec()) {
@@ -65,27 +72,35 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_login_clicked()
 {
-    QString user_id_num = ui->user_id_numLineEdit->text();
+    QString user_phone_num = ui->user_id_numLineEdit->text();
     QString password = ui->passwordLineEdit->text();
-
     QSqlQuery query;
-    query.prepare("SELECT * FROM user WHERE user_id_num = :user_id_num");
+    query.prepare("SELECT * FROM user WHERE user_phone_num = :user_phone_num");
 
-    query.bindValue(":user_id_num", user_id_num);
+    query.bindValue(":user_phone_num", user_phone_num);
     if (query.exec()) {
         if (query.next()) {
             QString storedPassword = query.value("user_password").toString();
+            QString user_name = query.value("user_name").toString();
+            QString type =  query.value("user_type").toString();
             // 这里应该使用密码散列比较
             if (storedPassword == password) { // 实际上应该使用密码验证函数
                 // 登录成功
                 // 可能需要保存用户ID或用户名到应用程序中
-                GlobalDataManager* manager = GlobalDataManager::getInstance();
-                manager->setUserDataBase(user_id_num,password);
-                // QString data=GlobalDataManager::getInstance()->getUserDataBase();
-                // qDebug()<<data;
-                this->hide();
-                this->page2->show();
-                qDebug()<<"success";
+                qDebug()<<type;
+                if(type=="0"){
+                    GlobalDataManager* manager = GlobalDataManager::getInstance();
+                    manager->setUserDataBase(user_phone_num,user_name,password);
+                    // QString data=GlobalDataManager::getInstance()->getUserDataBase();
+                    // qDebug()<<data;
+                    this->hide();
+                    this->page2->show();
+                    qDebug()<<"success";
+                }
+                else {
+                    this->hide();
+                    this->a->show();
+                }
             } else {
                 qDebug() << "Password does not match.";
             }
@@ -95,5 +110,13 @@ void MainWindow::on_login_clicked()
     } else {
         qDebug() << "Query execution failed.";
     }
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+
+    this->hide();
+    this->r->show();
 }
 

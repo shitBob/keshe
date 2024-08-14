@@ -29,7 +29,7 @@ public:
     QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
-    QPushButton *pushButton;
+    QPushButton *look;
     QPushButton *query;
     QPushButton *modify;
     QLabel *label_5;
@@ -63,9 +63,9 @@ public:
         label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(20, 70, 71, 31));
         label_3->setFont(font);
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(60, 160, 80, 18));
+        look = new QPushButton(centralwidget);
+        look->setObjectName("look");
+        look->setGeometry(QRect(60, 160, 80, 18));
         query = new QPushButton(centralwidget);
         query->setObjectName("query");
         query->setGeometry(QRect(60, 190, 80, 18));
@@ -107,7 +107,7 @@ public:
         label->setText(QCoreApplication::translate("My", "\347\224\250\346\210\267\345\220\215", nullptr));
         label_2->setText(QCoreApplication::translate("My", "\347\224\265\350\257\235\345\217\267\347\240\201", nullptr));
         label_3->setText(QCoreApplication::translate("My", "\347\224\250\346\210\267\347\261\273\345\236\213", nullptr));
-        pushButton->setText(QCoreApplication::translate("My", "\344\271\230\345\256\242\347\256\241\347\220\206", nullptr));
+        look->setText(QCoreApplication::translate("My", "\344\271\230\345\256\242\347\256\241\347\220\206", nullptr));
         query->setText(QCoreApplication::translate("My", "\350\256\242\345\215\225\346\237\245\350\257\242", nullptr));
         modify->setText(QCoreApplication::translate("My", "\347\224\250\346\210\267\344\277\241\346\201\257\344\277\256\346\224\271", nullptr));
         label_5->setText(QCoreApplication::translate("My", "TextLabel", nullptr));

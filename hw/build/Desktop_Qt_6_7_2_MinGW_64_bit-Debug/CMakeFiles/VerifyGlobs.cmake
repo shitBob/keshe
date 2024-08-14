@@ -41,14 +41,17 @@ endif()
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/datahw/hw/*.cpp")
 set(OLD_GLOB
+  "D:/datahw/hw/admin.cpp"
   "D:/datahw/hw/booking.cpp"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_admin.cpp"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_booking.cpp"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_menu.cpp"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_modify.cpp"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_my.cpp"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_query.cpp"
+  "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_registerwindow.cpp"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/mocs_compilation.cpp"
   "D:/datahw/hw/globalusermanager.cpp"
   "D:/datahw/hw/main.cpp"
@@ -76,13 +79,16 @@ endif()
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/datahw/hw/*.h")
 set(OLD_GLOB
+  "D:/datahw/hw/admin.h"
   "D:/datahw/hw/booking.h"
+  "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_admin.h"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_booking.h"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_mainwindow.h"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_menu.h"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_modify.h"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_my.h"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_query.h"
+  "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_registerwindow.h"
   "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/moc_predefs.h"
   "D:/datahw/hw/globalusermanager.h"
   "D:/datahw/hw/mainwindow.h"
@@ -190,6 +196,7 @@ endif()
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/datahw/hw/*.ui")
 set(OLD_GLOB
+  "D:/datahw/hw/admin.ui"
   "D:/datahw/hw/booking.ui"
   "D:/datahw/hw/mainwindow.ui"
   "D:/datahw/hw/menu.ui"

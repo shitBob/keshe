@@ -354,8 +354,10 @@ D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc
   D:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   D:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  D:/datahw/hw/admin.h \
   D:/datahw/hw/booking.h \
   D:/datahw/hw/menu.h \
   D:/datahw/hw/modify.h \
   D:/datahw/hw/my.h \
-  D:/datahw/hw/query.h
+  D:/datahw/hw/query.h \
+  D:/datahw/hw/registerwindow.h

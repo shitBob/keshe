@@ -39,7 +39,7 @@ constexpr auto qt_meta_stringdata_CLASSMyENDCLASS = QtMocHelpers::stringData(
     "back",
     "",
     "on_back2_clicked",
-    "on_modify_clicked"
+    "on_look_clicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -89,7 +89,7 @@ Q_CONSTINIT const QMetaObject My::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_back2_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_modify_clicked'
+        // method 'on_look_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -103,7 +103,7 @@ void My::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_
         switch (_id) {
         case 0: _t->back(); break;
         case 1: _t->on_back2_clicked(); break;
-        case 2: _t->on_modify_clicked(); break;
+        case 2: _t->on_look_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

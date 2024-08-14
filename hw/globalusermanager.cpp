@@ -22,15 +22,19 @@ GlobalDataManager* GlobalDataManager::getInstance() {
 }
 
 // 设置用户数据的方法
-void GlobalDataManager::setUserDataBase(const QString& data,const QString& p) {
-    userData = data;
-    password = p;
+void GlobalDataManager::setUserDataBase(const QString& ph,const QString& n,const QString& p) {
+    if (!ph.isEmpty()) user_phone = ph;
+    if (!p.isEmpty()) password = p;
+    if (!n.isEmpty()) user_name = n;
 }
 
 // 获取用户数据的方法
 QString GlobalDataManager::getUserDataBase() const {
-    return userData;
+    return user_phone;
 }
 QString GlobalDataManager::getUserDataBase1() const {
     return password;
+}
+QString GlobalDataManager::getUserDataBase2() const {
+    return user_name;
 }

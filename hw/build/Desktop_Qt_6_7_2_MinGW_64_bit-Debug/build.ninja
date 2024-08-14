@@ -129,6 +129,14 @@ build CMakeFiles/hw.dir/registerwindow.cpp.obj: CXX_COMPILER__hw_unscanned_Debug
   OBJECT_DIR = CMakeFiles\hw.dir
   OBJECT_FILE_DIR = CMakeFiles\hw.dir
 
+build CMakeFiles/hw.dir/admin.cpp.obj: CXX_COMPILER__hw_unscanned_Debug D$:/datahw/hw/admin.cpp || cmake_object_order_depends_target_hw
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\hw.dir\admin.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include -isystem D:/Qt/6.7.2/mingw_64/include/QtCore -isystem D:/Qt/6.7.2/mingw_64/include -isystem D:/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.7.2/mingw_64/include/QtWidgets -isystem D:/Qt/6.7.2/mingw_64/include/QtGui -isystem D:/Qt/6.7.2/mingw_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\hw.dir
+  OBJECT_FILE_DIR = CMakeFiles\hw.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target hw
@@ -137,7 +145,7 @@ build CMakeFiles/hw.dir/registerwindow.cpp.obj: CXX_COMPILER__hw_unscanned_Debug
 #############################################
 # Link the executable hw.exe
 
-build hw.exe: CXX_EXECUTABLE_LINKER__hw_Debug CMakeFiles/hw.dir/hw_autogen/mocs_compilation.cpp.obj CMakeFiles/hw.dir/main.cpp.obj CMakeFiles/hw.dir/mainwindow.cpp.obj CMakeFiles/hw.dir/menu.cpp.obj CMakeFiles/hw.dir/my.cpp.obj CMakeFiles/hw.dir/booking.cpp.obj CMakeFiles/hw.dir/modify.cpp.obj CMakeFiles/hw.dir/query.cpp.obj CMakeFiles/hw.dir/globalusermanager.cpp.obj CMakeFiles/hw.dir/registerwindow.cpp.obj | D$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a D$:/Qt/6.7.2/mingw_64/lib/libQt6Sql.a D$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a D$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a D$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || hw_autogen hw_autogen_timestamp_deps
+build hw.exe: CXX_EXECUTABLE_LINKER__hw_Debug CMakeFiles/hw.dir/hw_autogen/mocs_compilation.cpp.obj CMakeFiles/hw.dir/main.cpp.obj CMakeFiles/hw.dir/mainwindow.cpp.obj CMakeFiles/hw.dir/menu.cpp.obj CMakeFiles/hw.dir/my.cpp.obj CMakeFiles/hw.dir/booking.cpp.obj CMakeFiles/hw.dir/modify.cpp.obj CMakeFiles/hw.dir/query.cpp.obj CMakeFiles/hw.dir/globalusermanager.cpp.obj CMakeFiles/hw.dir/registerwindow.cpp.obj CMakeFiles/hw.dir/admin.cpp.obj | D$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a D$:/Qt/6.7.2/mingw_64/lib/libQt6Sql.a D$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a D$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a D$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || hw_autogen hw_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = D:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a  D:/Qt/6.7.2/mingw_64/lib/libQt6Sql.a  D:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  -ld3d12  D:/Qt/6.7.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  D:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -224,7 +232,7 @@ build hw_autogen_timestamp_deps: phony
 #############################################
 # Utility command for hw_autogen
 
-build hw_autogen: phony CMakeFiles/hw_autogen hw_autogen/include/ui_mainwindow.h hw_autogen/include/ui_menu.h hw_autogen/include/ui_my.h hw_autogen/include/ui_booking.h hw_autogen/include/ui_modify.h hw_autogen/include/ui_query.h hw_autogen/include/ui_registerwindow.h hw_autogen/timestamp hw_autogen/mocs_compilation.cpp hw_autogen_timestamp_deps
+build hw_autogen: phony CMakeFiles/hw_autogen hw_autogen/include/ui_mainwindow.h hw_autogen/include/ui_menu.h hw_autogen/include/ui_my.h hw_autogen/include/ui_booking.h hw_autogen/include/ui_modify.h hw_autogen/include/ui_query.h hw_autogen/include/ui_registerwindow.h hw_autogen/include/ui_admin.h hw_autogen/timestamp hw_autogen/mocs_compilation.cpp hw_autogen_timestamp_deps
 
 
 #############################################
@@ -241,7 +249,7 @@ build hw_autogen/timestamp hw_autogen/mocs_compilation.cpp | ${cmake_ninja_workd
 #############################################
 # Phony custom command for CMakeFiles\hw_autogen
 
-build CMakeFiles/hw_autogen hw_autogen/include/ui_mainwindow.h hw_autogen/include/ui_menu.h hw_autogen/include/ui_my.h hw_autogen/include/ui_booking.h hw_autogen/include/ui_modify.h hw_autogen/include/ui_query.h hw_autogen/include/ui_registerwindow.h | ${cmake_ninja_workdir}CMakeFiles/hw_autogen ${cmake_ninja_workdir}hw_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}hw_autogen/include/ui_menu.h ${cmake_ninja_workdir}hw_autogen/include/ui_my.h ${cmake_ninja_workdir}hw_autogen/include/ui_booking.h ${cmake_ninja_workdir}hw_autogen/include/ui_modify.h ${cmake_ninja_workdir}hw_autogen/include/ui_query.h ${cmake_ninja_workdir}hw_autogen/include/ui_registerwindow.h: phony hw_autogen/timestamp || hw_autogen_timestamp_deps
+build CMakeFiles/hw_autogen hw_autogen/include/ui_mainwindow.h hw_autogen/include/ui_menu.h hw_autogen/include/ui_my.h hw_autogen/include/ui_booking.h hw_autogen/include/ui_modify.h hw_autogen/include/ui_query.h hw_autogen/include/ui_registerwindow.h hw_autogen/include/ui_admin.h | ${cmake_ninja_workdir}CMakeFiles/hw_autogen ${cmake_ninja_workdir}hw_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}hw_autogen/include/ui_menu.h ${cmake_ninja_workdir}hw_autogen/include/ui_my.h ${cmake_ninja_workdir}hw_autogen/include/ui_booking.h ${cmake_ninja_workdir}hw_autogen/include/ui_modify.h ${cmake_ninja_workdir}hw_autogen/include/ui_query.h ${cmake_ninja_workdir}hw_autogen/include/ui_registerwindow.h ${cmake_ninja_workdir}hw_autogen/include/ui_admin.h: phony hw_autogen/timestamp || hw_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

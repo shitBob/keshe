@@ -27,6 +27,11 @@ My::My(QWidget *parent)
         this->query->hide();
         this->show();
     });
+    // QString username = GlobalDataManager::getInstance()->getUserDataBase();
+    // QString password = GlobalDataManager::getInstance()->getUserDataBase1();
+    // qDebug()<<username ;
+    // this->ui->label_4->setText(username);
+    // this->ui->label_5->setText(password);
 }
 
 My::~My()
@@ -40,14 +45,12 @@ void My::on_back2_clicked()
 
 }
 
-
-
-void My::on_modify_clicked()
+void My::on_look_clicked()
 {
-    QString userData = GlobalDataManager::getInstance()->getUserDataBase();
-    QString password = GlobalDataManager::getInstance()->getUserDataBase1();
-    qDebug()<<userData;
-    ui->label_4->setText(userData);
-    ui->label_5->setText(password);
+    QString userphone = GlobalDataManager::getInstance()->getUserDataBase();
+    QString username = GlobalDataManager::getInstance()->getUserDataBase2();
+    qDebug()<<userphone ;
+    ui->label_4->setText(username);
+    ui->label_5->setText(userphone);
 }
 

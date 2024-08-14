@@ -556,6 +556,8 @@ hw_autogen/timestamp: \
 	D:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
 	D:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
 	D:/datahw/hw/CMakeLists.txt \
+	D:/datahw/hw/admin.cpp \
+	D:/datahw/hw/admin.h \
 	D:/datahw/hw/booking.cpp \
 	D:/datahw/hw/booking.h \
 	D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
@@ -578,6 +580,7 @@ hw_autogen/timestamp: \
 	D:/datahw/hw/query.h \
 	D:/datahw/hw/registerwindow.cpp \
 	D:/datahw/hw/registerwindow.h \
+	D:/datahw/hw/admin.ui \
 	D:/datahw/hw/booking.ui \
 	D:/datahw/hw/mainwindow.ui \
 	D:/datahw/hw/menu.ui \

@@ -10,9 +10,10 @@ public:
     static GlobalDataManager* getInstance();
 
     // 设置和获取用户数据的方法
-    void setUserDataBase(const QString& data,const QString& password);
+    void setUserDataBase(const QString& ph,const QString& n,const QString& p);
     QString getUserDataBase() const;
     QString getUserDataBase1() const;
+    QString getUserDataBase2() const;
 private:
     // 私有构造函数和析构函数，防止外部创建和删除实例
     GlobalDataManager();
@@ -26,8 +27,9 @@ private:
     static GlobalDataManager* instance;
 
     // 用于存储用户数据的字符串变量
-    QString userData;
+    QString user_phone;
     QString password;
+    QString user_name;
 };
 
 #endif // GLOBALDATAMANAGER_H

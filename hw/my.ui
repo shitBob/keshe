@@ -74,7 +74,7 @@
      <string>用户类型</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="look">
     <property name="geometry">
      <rect>
       <x>60</x>

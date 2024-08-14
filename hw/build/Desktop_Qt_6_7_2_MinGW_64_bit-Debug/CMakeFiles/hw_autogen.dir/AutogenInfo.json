@@ -321,6 +321,7 @@
 	"DEP_FILE_RULE_NAME" : "hw_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[ "D:/datahw/hw/admin.h", "MU", "EWIEGA46WW/moc_admin.cpp", null ],
 		[ "D:/datahw/hw/booking.h", "MU", "EWIEGA46WW/moc_booking.cpp", null ],
 		[
 			"D:/datahw/hw/globalusermanager.h",
@@ -418,6 +419,7 @@
 	"SETTINGS_FILE" : "D:/datahw/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/hw_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "D:/datahw/hw/admin.cpp", "MU", null ],
 		[ "D:/datahw/hw/booking.cpp", "MU", null ],
 		[ "D:/datahw/hw/globalusermanager.cpp", "MU", null ],
 		[ "D:/datahw/hw/main.cpp", "MU", null ],

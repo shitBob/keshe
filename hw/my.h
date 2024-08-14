@@ -22,7 +22,7 @@ signals:
 private slots:
     void on_back2_clicked();
 
-    void on_modify_clicked();
+    void on_look_clicked();
 
 private:
     Ui::My *ui;
