@@ -16,6 +16,7 @@ public:
     ~My();
     Modify *modify = NULL;
     Query *query = NULL;
+     void initialize();
 
 signals:
     void back();
