@@ -1,17 +1,17 @@
 /*
- Navicat Premium Data Transfer
+ Navicat Premium Dump SQL
 
- Source Server         : hw
+ Source Server         : 192.168.68.1
  Source Server Type    : MySQL
- Source Server Version : 80038
+ Source Server Version : 80039 (8.0.39)
  Source Host           : localhost:3306
  Source Schema         : db
 
  Target Server Type    : MySQL
- Target Server Version : 80038
+ Target Server Version : 80039 (8.0.39)
  File Encoding         : 65001
 
- Date: 13/08/2024 20:29:25
+ Date: 16/08/2024 11:38:39
 */
 
 SET NAMES utf8mb4;
@@ -38,7 +38,7 @@ CREATE TABLE `order_list`  (
   `order_status` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   `train_start_date` datetime NULL DEFAULT NULL,
   PRIMARY KEY (`order_id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of order_list
@@ -56,7 +56,7 @@ CREATE TABLE `passenger`  (
   `passenger_type` int NOT NULL,
   `passenger_address` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
   PRIMARY KEY (`passenger_phone_num`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of passenger
@@ -72,7 +72,7 @@ CREATE TABLE `seat`  (
   `seat_type` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   `seat_count` int NOT NULL,
   PRIMARY KEY (`train_no`, `carriage_no`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of seat
@@ -95,7 +95,7 @@ CREATE TABLE `train_info`  (
   `train_running_type` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `train_num` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`train_no`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of train_info
@@ -115,31 +115,47 @@ CREATE TABLE `train_parking_station`  (
   `station_no` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
   `station_name` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
   PRIMARY KEY (`train_no`, `station_no`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of train_parking_station
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for us_pa
+-- ----------------------------
+DROP TABLE IF EXISTS `us_pa`;
+CREATE TABLE `us_pa`  (
+  `passenger_id` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `user_phone_num` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  PRIMARY KEY (`passenger_id`) USING BTREE,
+  INDEX `user_phone_num`(`user_phone_num` ASC) USING BTREE,
+  CONSTRAINT `us_pa_ibfk_1` FOREIGN KEY (`user_phone_num`) REFERENCES `user` (`user_phone_num`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of us_pa
+-- ----------------------------
+INSERT INTO `us_pa` VALUES ('123', '111');
+
+-- ----------------------------
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user`  (
-  `user_phone_num` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
-  `user_id_num` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `user_phone_num` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `user_name` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
   `user_password` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
-  `user_email` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
-  `user_real_name` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
   `user_type` int NOT NULL,
-  `user_gender` int NOT NULL,
-  `user_address` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
   PRIMARY KEY (`user_phone_num`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_bin ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('12345678901', '123', 'password123', 'user@example.com', '张三', 1, 1, '北京市朝阳区');
+INSERT INTO `user` VALUES ('111', 'hao', '111', 0);
+INSERT INTO `user` VALUES ('123456', '111', '22222', 0);
+INSERT INTO `user` VALUES ('12345678901', '222', '22222', 0);
+INSERT INTO `user` VALUES ('god', 'lzq', '123456', 1);
 
 SET FOREIGN_KEY_CHECKS = 1;
