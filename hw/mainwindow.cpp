@@ -115,7 +115,7 @@ void MainWindow::on_login_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
-
+    //haha
     this->hide();
     this->r->show();
 }
