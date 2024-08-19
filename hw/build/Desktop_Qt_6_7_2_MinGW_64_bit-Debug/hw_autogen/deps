@@ -1,5 +1,7 @@
 hw_autogen/timestamp: \
 	C:/Users/86184/Desktop/keshe/hw/CMakeLists.txt \
+	C:/Users/86184/Desktop/keshe/hw/add_passenger.cpp \
+	C:/Users/86184/Desktop/keshe/hw/add_passenger.h \
 	C:/Users/86184/Desktop/keshe/hw/admin.cpp \
 	C:/Users/86184/Desktop/keshe/hw/admin.h \
 	C:/Users/86184/Desktop/keshe/hw/booking.cpp \
@@ -583,6 +585,7 @@ hw_autogen/timestamp: \
 	D:/qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
 	D:/qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
 	D:/qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+	C:/Users/86184/Desktop/keshe/hw/add_passenger.ui \
 	C:/Users/86184/Desktop/keshe/hw/admin.ui \
 	C:/Users/86184/Desktop/keshe/hw/booking.ui \
 	C:/Users/86184/Desktop/keshe/hw/mainwindow.ui \

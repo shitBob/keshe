@@ -7,6 +7,7 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlQueryModel>
+#include "add_passenger.h"
 My::My(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::My)
@@ -100,30 +101,9 @@ void My::initialize()
 
 void My::on_look_clicked()
 {
-    QString userphone = GlobalDataManager::getInstance()->getUserDataBase();
-    QString username = GlobalDataManager::getInstance()->getUserDataBase2();
-    qDebug()<<userphone ;
-    ui->label_4->setText(username);
-    ui->label_5->setText(userphone);
-    QSqlQueryModel *model = new QSqlQueryModel;
-    QSqlQuery query;
-    query.prepare("SELECT * FROM us_pa WHERE user_phone_num = (:value1)");
-    query.bindValue(":value1", userphone);
-    query.exec();
-    model->setQuery(query);
-
-    // if (model->lastError().isValid()) {
-    //     qDebug() << "Query Error: " << model->lastError().text();
-    //     return -1;
-    // }
-    if (!query.next()) {
-        qDebug() << "Query result is empty";
-    }
-
-    ui->PassengerView->setModel(model);
-    ui->PassengerView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    ui->PassengerView->verticalHeader()->setVisible(false);
-    ui->PassengerView->show();
-
+    add_passenger ad;
+    ad.show();
+    QEventLoop loop;
+    loop.exec();
 }
 

@@ -41,9 +41,11 @@ endif()
 # _directory_contents at D:/qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/86184/Desktop/keshe/hw/*.cpp")
 set(OLD_GLOB
+  "C:/Users/86184/Desktop/keshe/hw/add_passenger.cpp"
   "C:/Users/86184/Desktop/keshe/hw/admin.cpp"
   "C:/Users/86184/Desktop/keshe/hw/booking.cpp"
   "C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_add_passenger.cpp"
   "C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_admin.cpp"
   "C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_booking.cpp"
   "C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_mainwindow.cpp"
@@ -81,8 +83,10 @@ endif()
 # _directory_contents at D:/qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/86184/Desktop/keshe/hw/*.h")
 set(OLD_GLOB
+  "C:/Users/86184/Desktop/keshe/hw/add_passenger.h"
   "C:/Users/86184/Desktop/keshe/hw/admin.h"
   "C:/Users/86184/Desktop/keshe/hw/booking.h"
+  "C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_add_passenger.h"
   "C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_admin.h"
   "C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_booking.h"
   "C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/include/ui_mainwindow.h"
@@ -200,6 +204,7 @@ endif()
 # _directory_contents at D:/qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/86184/Desktop/keshe/hw/*.ui")
 set(OLD_GLOB
+  "C:/Users/86184/Desktop/keshe/hw/add_passenger.ui"
   "C:/Users/86184/Desktop/keshe/hw/admin.ui"
   "C:/Users/86184/Desktop/keshe/hw/booking.ui"
   "C:/Users/86184/Desktop/keshe/hw/mainwindow.ui"

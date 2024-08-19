@@ -84,7 +84,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>乘客管理</string>
+     <string>乘客添加</string>
     </property>
    </widget>
    <widget class="QPushButton" name="query">

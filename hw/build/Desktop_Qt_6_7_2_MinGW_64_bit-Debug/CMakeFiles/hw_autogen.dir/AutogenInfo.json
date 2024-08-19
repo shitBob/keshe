@@ -322,6 +322,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/86184/Desktop/keshe/hw/add_passenger.h",
+			"MU",
+			"EWIEGA46WW/moc_add_passenger.cpp",
+			null
+		],
+		[
 			"C:/Users/86184/Desktop/keshe/hw/admin.h",
 			"MU",
 			"EWIEGA46WW/moc_admin.cpp",
@@ -455,6 +461,7 @@
 	"SETTINGS_FILE" : "C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/hw_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Users/86184/Desktop/keshe/hw/add_passenger.cpp", "MU", null ],
 		[ "C:/Users/86184/Desktop/keshe/hw/admin.cpp", "MU", null ],
 		[ "C:/Users/86184/Desktop/keshe/hw/booking.cpp", "MU", null ],
 		[ "C:/Users/86184/Desktop/keshe/hw/globalusermanager.cpp", "MU", null ],

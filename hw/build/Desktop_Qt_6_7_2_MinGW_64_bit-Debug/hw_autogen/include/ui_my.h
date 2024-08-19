@@ -107,7 +107,7 @@ public:
         label->setText(QCoreApplication::translate("My", "\347\224\250\346\210\267\345\220\215", nullptr));
         label_2->setText(QCoreApplication::translate("My", "\347\224\265\350\257\235\345\217\267\347\240\201", nullptr));
         label_3->setText(QCoreApplication::translate("My", "\347\224\250\346\210\267\347\261\273\345\236\213", nullptr));
-        look->setText(QCoreApplication::translate("My", "\344\271\230\345\256\242\347\256\241\347\220\206", nullptr));
+        look->setText(QCoreApplication::translate("My", "\344\271\230\345\256\242\346\267\273\345\212\240", nullptr));
         query->setText(QCoreApplication::translate("My", "\350\256\242\345\215\225\346\237\245\350\257\242", nullptr));
         modify->setText(QCoreApplication::translate("My", "\347\224\250\346\210\267\344\277\241\346\201\257\344\277\256\346\224\271", nullptr));
         label_5->setText(QCoreApplication::translate("My", "TextLabel", nullptr));
