@@ -8,6 +8,9 @@
 #include <QSqlQuery>
 #include <QSqlQueryModel>
 #include "add_passenger.h"
+#include <QStandardItemModel>
+#include <QStandardItem>
+
 My::My(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::My)
@@ -105,3 +108,27 @@ void My::on_look_clicked()
 {
      My::initialize();
 }
+
+void My::on_pushButton_clicked()
+{
+
+    QAbstractItemModel *model = ui->PassengerView->model();
+    QString data = model->data(model->index(delete_row, 2)).toString();
+
+    QSqlQuery query;
+    query.prepare("DELETE FROM passenger WHERE passenger_id_num  = (:value1);");
+    query.bindValue(":value1",data);
+    query.exec();
+    initialize();
+    qDebug()<<data;
+
+}
+
+
+void My::on_PassengerView_clicked(const QModelIndex &index)
+{
+    int row=index.row();//获得当前行索引
+    this->delete_row=row;
+
+}
+

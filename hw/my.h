@@ -19,6 +19,7 @@ public:
     Query *query = NULL;
     add_passenger *ad =NULL;
      void initialize();
+    int delete_row ;
 
 public slots:
     void updateOnBWindowClosed(); // 槽函数
@@ -29,6 +30,10 @@ private slots:
     void on_back2_clicked();
 
     void on_look_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_PassengerView_clicked(const QModelIndex &index);
 
 private:
     Ui::My *ui;

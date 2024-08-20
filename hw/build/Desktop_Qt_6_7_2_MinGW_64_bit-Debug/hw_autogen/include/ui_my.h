@@ -37,6 +37,7 @@ public:
     QTableView *PassengerView;
     QPushButton *back2;
     QLabel *label_4;
+    QPushButton *pushButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -88,6 +89,9 @@ public:
         label_4 = new QLabel(centralwidget);
         label_4->setObjectName("label_4");
         label_4->setGeometry(QRect(100, 20, 71, 21));
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(60, 130, 81, 21));
         My->setCentralWidget(centralwidget);
         menubar = new QMenuBar(My);
         menubar->setObjectName("menubar");
@@ -115,6 +119,7 @@ public:
         label_6->setText(QCoreApplication::translate("My", "TextLabel", nullptr));
         back2->setText(QCoreApplication::translate("My", "\350\277\224\345\233\236", nullptr));
         label_4->setText(QCoreApplication::translate("My", "TextLabel", nullptr));
+        pushButton->setText(QCoreApplication::translate("My", "\345\210\240\351\231\244\344\271\230\345\256\242", nullptr));
     } // retranslateUi
 
 };
