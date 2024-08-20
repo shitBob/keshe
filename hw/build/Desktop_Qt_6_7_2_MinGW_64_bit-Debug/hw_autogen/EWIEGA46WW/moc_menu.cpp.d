@@ -1,5 +1,6 @@
 C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/EWIEGA46WW/moc_menu.cpp: C:/Users/86184/Desktop/keshe/hw/menu.h \
   C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_autogen/moc_predefs.h \
+  C:/Users/86184/Desktop/keshe/hw/add_passenger.h \
   C:/Users/86184/Desktop/keshe/hw/booking.h \
   C:/Users/86184/Desktop/keshe/hw/modify.h \
   C:/Users/86184/Desktop/keshe/hw/my.h \
@@ -147,6 +148,7 @@ C:/Users/86184/Desktop/keshe/hw/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/hw_aut
   D:/qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qt/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
+  D:/qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
   D:/qt/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/qt/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \

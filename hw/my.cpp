@@ -15,6 +15,7 @@ My::My(QWidget *parent)
     ui->setupUi(this);
     this->modify = new Modify;
     this->query = new Query;
+    this->ad  = new add_passenger;
     connect(ui->modify,&QPushButton::clicked,[=](){
         this->hide();
         this->modify->show();
@@ -31,6 +32,8 @@ My::My(QWidget *parent)
         this->query->hide();
         this->show();
     });
+    connect(ad, &add_passenger::bWindowClosed, this, &My::updateOnBWindowClosed);
+
     QString username = GlobalDataManager::getInstance()->getUserDataBase();
     QString password = GlobalDataManager::getInstance()->getUserDataBase1();
     qDebug()<<username ;
@@ -80,18 +83,11 @@ void My::initialize()
     ui->label_5->setText(userphone);
     QSqlQueryModel *model = new QSqlQueryModel;
     QSqlQuery query;
-    query.prepare("SELECT * FROM us_pa WHERE user_phone_num = (:value1)");
+    query.prepare("SELECT * FROM passenger WHERE user_phone_num = (:value1)");
     query.bindValue(":value1", userphone);
     query.exec();
     model->setQuery(query);
 
-    // if (model->lastError().isValid()) {
-    //     qDebug() << "Query Error: " << model->lastError().text();
-    //     return -1;
-    // }
-    if (!query.next()) {
-        qDebug() << "Query result is empty";
-    }
 
     ui->PassengerView->setModel(model);
     ui->PassengerView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
@@ -101,9 +97,11 @@ void My::initialize()
 
 void My::on_look_clicked()
 {
-    add_passenger ad;
-    ad.show();
+    ad->show();
     QEventLoop loop;
     loop.exec();
 }
-
+ void My::updateOnBWindowClosed()
+{
+     My::initialize();
+}

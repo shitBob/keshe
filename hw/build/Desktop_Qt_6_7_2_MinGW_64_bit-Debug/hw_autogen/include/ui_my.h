@@ -81,6 +81,7 @@ public:
         PassengerView = new QTableView(centralwidget);
         PassengerView->setObjectName("PassengerView");
         PassengerView->setGeometry(QRect(200, 10, 331, 301));
+        PassengerView->horizontalHeader()->setCascadingSectionResizes(false);
         back2 = new QPushButton(centralwidget);
         back2->setObjectName("back2");
         back2->setGeometry(QRect(60, 250, 80, 18));

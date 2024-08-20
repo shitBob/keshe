@@ -3,6 +3,7 @@
 #include "query.h"
 #include "modify.h"
 #include <QMainWindow>
+#include "add_passenger.h"
 namespace Ui {
 class My;
 }
@@ -16,7 +17,11 @@ public:
     ~My();
     Modify *modify = NULL;
     Query *query = NULL;
+    add_passenger *ad =NULL;
      void initialize();
+
+public slots:
+    void updateOnBWindowClosed(); // 槽函数
 
 signals:
     void back();
