@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>itemFrom</class>
- <widget class="QMainWindow" name="itemFrom">
+ <class>itemorder</class>
+ <widget class="QMainWindow" name="itemorder">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>629</width>
-    <height>79</height>
+    <width>631</width>
+    <height>75</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
+      <x>140</x>
+      <y>20</y>
       <width>21</width>
       <height>16</height>
      </rect>
@@ -27,69 +27,11 @@
      <string>车次</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>10</y>
-      <width>41</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>出发时间</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="t">
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>10</y>
-      <width>31</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>起点站</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="no">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>40</width>
-      <height>12</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="time">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>10</y>
-      <width>40</width>
-      <height>12</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="s">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>10</y>
+      <y>20</y>
       <width>40</width>
       <height>12</height>
      </rect>
@@ -104,8 +46,95 @@
    <widget class="QLabel" name="e">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>10</y>
+      <x>460</x>
+      <y>20</y>
+      <width>40</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>20</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>出发时间</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>起点站</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>20</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>类型</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="no">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>40</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="s">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>20</y>
+      <width>40</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="time">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
       <width>40</width>
       <height>12</height>
      </rect>
@@ -120,8 +149,8 @@
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>10</y>
+      <x>430</x>
+      <y>20</y>
       <width>41</width>
       <height>16</height>
      </rect>
@@ -130,27 +159,11 @@
      <string>终点站</string>
     </property>
    </widget>
-   <widget class="QLabel" name="p">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>10</y>
-      <width>40</width>
-      <height>12</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>10</y>
+      <x>510</x>
+      <y>20</y>
       <width>41</width>
       <height>16</height>
      </rect>
@@ -159,11 +172,11 @@
      <string>价格</string>
     </property>
    </widget>
-   <widget class="QLabel" name="ca">
+   <widget class="QLabel" name="p">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>10</y>
+      <x>540</x>
+      <y>20</y>
       <width>40</width>
       <height>12</height>
      </rect>
@@ -175,37 +188,24 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>10</y>
-      <width>41</width>
+      <x>30</x>
+      <y>20</y>
+      <width>31</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>剩余</string>
+     <string>乘车人</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="buy">
+   <widget class="QLabel" name="name">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>10</y>
-      <width>56</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>购买</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="t">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>10</y>
+      <x>80</x>
+      <y>20</y>
       <width>40</width>
       <height>12</height>
      </rect>
@@ -215,19 +215,6 @@
     </property>
     <property name="text">
      <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>10</y>
-      <width>41</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>类型</string>
     </property>
    </widget>
   </widget>
@@ -236,7 +223,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>629</width>
+     <width>631</width>
      <height>18</height>
     </rect>
    </property>

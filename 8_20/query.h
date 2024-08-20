@@ -19,6 +19,8 @@ signals:
 private slots:
     void on_back6_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::Query *ui;
 };

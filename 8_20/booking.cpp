@@ -68,8 +68,8 @@ void Booking::on_pushButton_clicked()
         QString end = query.value("train_end_station").toString();
         if(noo.isEmpty() || no.contains(noo)){
             if(timee.isEmpty() || time.contains(timee)){
-                if(!startt.isEmpty() || start.contains(startt)){
-                    if(!endd.isEmpty() || end.contains(endd)){
+                if(startt.isEmpty() || start.contains(startt)){
+                    if(endd.isEmpty() || end.contains(endd)){
                         int price = query.value("train_price").toInt();
                         int carriage = query.value("train_carriages").toInt();
                         qDebug()<<no<<time<<start;

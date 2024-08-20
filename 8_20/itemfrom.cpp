@@ -33,6 +33,8 @@ void itemFrom::setTrainInfo(QString no, QString type, QString time, QString star
 void itemFrom::on_buy_clicked()
 {
     QWidget window;
+    //跳转选择乘客界面
+
     int ret = QMessageBox::question(&window,
                                     "询问",
                                     "您确定要购买该火车票吗？",
