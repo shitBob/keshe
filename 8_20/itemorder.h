@@ -14,7 +14,10 @@ class itemorder : public QMainWindow
 public:
     explicit itemorder(QWidget *parent = nullptr);
     ~itemorder();
-    void setTrainInfo(QString passenger,QString no,QString type,QString time,QString start,QString end,int price);
+    void setTrainInfo(QString passenger,QString no,QString type,QString time,QString start,QString end,int price,QString id);
+private slots:
+    void on_delet_clicked();
+
 private:
     Ui::itemorder *ui;
 };

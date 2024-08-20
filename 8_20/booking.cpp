@@ -42,7 +42,6 @@ Booking::~Booking() {
     delete ui;
 }
 
-
 void Booking::on_pushButton_2_clicked() {
     emit this->back();
 }

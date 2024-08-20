@@ -101,6 +101,7 @@ void MainWindow::on_login_clicked()
                 else {
                     this->hide();
                     this->a->show();
+                    a->initialize();
                 }
             } else {
                 qDebug() << "Password does not match.";

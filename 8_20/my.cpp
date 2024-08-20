@@ -26,6 +26,7 @@ My::My(QWidget *parent)
     connect(ui->query,&QPushButton::clicked,[=](){
         this->hide();
         this->query->show();
+        query->initialize();
     });
     connect(this->modify,&Modify::back,[=](){
         this->modify->hide();

@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>train_no</string>
+     <string>添加</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="no">
@@ -60,7 +60,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>time</string>
+     <string>添加</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="start">
@@ -83,7 +83,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>start</string>
+     <string>添加</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="end">
@@ -106,7 +106,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>end</string>
+     <string>添加</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="ca">
@@ -129,20 +129,20 @@
      </rect>
     </property>
     <property name="text">
-     <string>carriages</string>
+     <string>添加</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>230</x>
       <y>240</y>
       <width>56</width>
       <height>18</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>添加</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="p">
@@ -165,7 +165,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>price</string>
+     <string>添加</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="t">
@@ -191,7 +191,20 @@
      </rect>
     </property>
     <property name="text">
-     <string>train_type</string>
+     <string>添加</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>240</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>返回</string>
     </property>
    </widget>
   </widget>

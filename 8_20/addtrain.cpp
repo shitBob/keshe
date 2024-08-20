@@ -49,6 +49,11 @@ void Addtrain::on_pushButton_clicked()
     } else {
         QMessageBox::critical(this, "列车信息添加失败", "添加失败：" + query.lastError().text());
     }
+}
+
+
+void Addtrain::on_pushButton_2_clicked()
+{
     emit this->back();
 }
 

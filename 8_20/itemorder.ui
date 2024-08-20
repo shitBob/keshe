@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>70</x>
       <y>20</y>
       <width>21</width>
       <height>16</height>
@@ -30,7 +30,7 @@
    <widget class="QLabel" name="t">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>150</x>
       <y>20</y>
       <width>40</width>
       <height>12</height>
@@ -46,7 +46,7 @@
    <widget class="QLabel" name="e">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>390</x>
       <y>20</y>
       <width>40</width>
       <height>12</height>
@@ -62,7 +62,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>190</x>
       <y>20</y>
       <width>41</width>
       <height>16</height>
@@ -75,7 +75,7 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>280</x>
       <y>20</y>
       <width>31</width>
       <height>16</height>
@@ -88,7 +88,7 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>130</x>
       <y>20</y>
       <width>41</width>
       <height>16</height>
@@ -101,7 +101,7 @@
    <widget class="QLabel" name="no">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>90</x>
       <y>20</y>
       <width>40</width>
       <height>12</height>
@@ -117,7 +117,7 @@
    <widget class="QLabel" name="s">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>310</x>
       <y>20</y>
       <width>40</width>
       <height>12</height>
@@ -133,7 +133,7 @@
    <widget class="QLabel" name="time">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>230</x>
       <y>20</y>
       <width>40</width>
       <height>12</height>
@@ -149,7 +149,7 @@
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>360</x>
       <y>20</y>
       <width>41</width>
       <height>16</height>
@@ -162,9 +162,9 @@
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>440</x>
       <y>20</y>
-      <width>41</width>
+      <width>16</width>
       <height>16</height>
      </rect>
     </property>
@@ -175,7 +175,7 @@
    <widget class="QLabel" name="p">
     <property name="geometry">
      <rect>
-      <x>540</x>
+      <x>460</x>
       <y>20</y>
       <width>40</width>
       <height>12</height>
@@ -191,7 +191,7 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>0</x>
       <y>20</y>
       <width>31</width>
       <height>16</height>
@@ -204,7 +204,49 @@
    <widget class="QLabel" name="name">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>30</x>
+      <y>20</y>
+      <width>40</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delet">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>20</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>删除</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>20</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>订单号</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="id">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
       <y>20</y>
       <width>40</width>
       <height>12</height>

@@ -18,6 +18,7 @@ public:
     explicit Admin(QWidget *parent = nullptr);
     ~Admin();
     Addtrain *add = NULL;
+    void initialize();
 signals:
     void back();
 private slots:

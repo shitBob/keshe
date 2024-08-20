@@ -14,6 +14,7 @@ class Query : public QMainWindow
 public:
     explicit Query(QWidget *parent = nullptr);
     ~Query();
+    void initialize();
 signals:
     void back();
 private slots:
