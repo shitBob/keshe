@@ -43,7 +43,7 @@
    <widget class="QTableView" name="PassengerView">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>220</x>
       <y>20</y>
       <width>331</width>
       <height>301</height>
