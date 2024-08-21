@@ -14,7 +14,7 @@ class buy : public QMainWindow
 public:
     explicit buy(QWidget *parent = nullptr);
     ~buy();
-
+    void initialize(QString no);
 private:
     Ui::buy *ui;
 };

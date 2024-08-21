@@ -14,9 +14,13 @@ class itembuy : public QMainWindow
 public:
     explicit itembuy(QWidget *parent = nullptr);
     ~itembuy();
+    void setbuy(QString name,QString no,QString id,QString phone);
+private slots:
+    void on_pushButton_clicked();
 
 private:
     Ui::itembuy *ui;
+    QString noo = "fuck";
 };
 
 #endif // ITEMBUY_H
