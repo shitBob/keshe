@@ -54,7 +54,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>查询</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -75,8 +75,8 @@
      <rect>
       <x>20</x>
       <y>50</y>
-      <width>481</width>
-      <height>261</height>
+      <width>591</width>
+      <height>271</height>
      </rect>
     </property>
    </widget>

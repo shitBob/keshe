@@ -31,6 +31,7 @@ My::My(QWidget *parent)
     connect(this->modify,&Modify::back,[=](){
         this->modify->hide();
         this->show();
+        initialize();
     });
     connect(this->query,&Query::back,[=](){
         this->query->hide();
