@@ -9,6 +9,7 @@
 #include<QDebug>
 #include"itemfrom.h"
 
+
 Booking::Booking(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::Booking) {
     ui->setupUi(this);
@@ -85,4 +86,5 @@ void Booking::on_pushButton_clicked()
         }
     }
 }
+
 

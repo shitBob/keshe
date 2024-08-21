@@ -6,34 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>306</width>
+    <height>359</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(204, 247, 243);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="my">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>70</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>个人中心</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="booking">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>120</y>
-      <width>91</width>
-      <height>31</height>
+      <x>67</x>
+      <y>138</y>
+      <width>161</width>
+      <height>24</height>
      </rect>
     </property>
     <property name="text">
@@ -43,14 +33,27 @@
    <widget class="QPushButton" name="back1">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>210</y>
-      <width>80</width>
-      <height>18</height>
+      <x>67</x>
+      <y>204</y>
+      <width>161</width>
+      <height>24</height>
      </rect>
     </property>
     <property name="text">
      <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="my">
+    <property name="geometry">
+     <rect>
+      <x>67</x>
+      <y>72</y>
+      <width>161</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>个人中心</string>
     </property>
    </widget>
   </widget>
@@ -59,10 +62,16 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>17</height>
+     <width>306</width>
+     <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menutabwidget_setStyleSheet_QTabWidget_pane_border_0">
+    <property name="title">
+     <string>tabwidget.setStyleSheet(&quot;QTabWidget::pane { border: 0; }&quot;)</string>
+    </property>
+   </widget>
+   <addaction name="menutabwidget_setStyleSheet_QTabWidget_pane_border_0"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
