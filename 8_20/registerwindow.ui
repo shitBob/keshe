@@ -6,107 +6,122 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>325</width>
+    <height>370</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>注册用户</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="QIcon::ThemeIcon::AddressBookNew"/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(217, 247, 246);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>120</y>
-      <width>40</width>
-      <height>12</height>
+      <x>60</x>
+      <y>60</y>
+      <width>41</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>name</string>
+     <string>姓名</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Register">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>300</y>
-      <width>80</width>
-      <height>18</height>
+      <x>70</x>
+      <y>240</y>
+      <width>71</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>register</string>
+     <string>注册</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="usernameLineEdit">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>120</y>
+      <x>140</x>
+      <y>60</y>
       <width>113</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>170</y>
-      <width>40</width>
-      <height>12</height>
+      <x>60</x>
+      <y>110</y>
+      <width>51</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>phone</string>
+     <string>电话号码</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="phoneLineEdit">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>170</y>
+      <x>140</x>
+      <y>110</y>
       <width>113</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>159</x>
-      <y>220</y>
-      <width>51</width>
-      <height>20</height>
+      <x>60</x>
+      <y>160</y>
+      <width>31</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>password</string>
+     <string>密码</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="passwordLineEdit">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>220</y>
+      <x>140</x>
+      <y>160</y>
       <width>113</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QPushButton" name="back">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>300</y>
-      <width>80</width>
-      <height>18</height>
+      <x>180</x>
+      <y>240</y>
+      <width>71</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>return</string>
+     <string>返回</string>
     </property>
    </widget>
   </widget>
@@ -115,8 +130,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>17</height>
+     <width>325</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>

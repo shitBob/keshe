@@ -11,7 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>乘客主页</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="QIcon::ThemeIcon::AddressBookNew"/>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(204, 247, 243);</string>

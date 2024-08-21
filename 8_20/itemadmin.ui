@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>修改车票信息</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(217, 247, 246);</string>
