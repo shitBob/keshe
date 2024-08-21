@@ -33,34 +33,38 @@ void itemFrom::setTrainInfo(QString no, QString type, QString time, QString star
 void itemFrom::on_buy_clicked()
 {
     QWidget window;
-    int ret = QMessageBox::question(&window,
-                                    "询问",
-                                    "您确定要购买该火车票吗？",
-                                    QMessageBox::Yes | QMessageBox::No,
-                                    QMessageBox::No);
-
-    if (ret == QMessageBox::Yes) {
-        // 用户点击了"是"
-        QString noo = ui->no->text();
-        QString caa = ui->ca->text();
-        // 构建更新语句
-        if(caa!="0"){
-            QString query = QString("UPDATE train_info SET train_carriages = train_carriages - 1 WHERE train_no = '%1'")
-                .arg(noo);
-            QSqlQuery sql;
-            if (sql.exec(query)) {
-                qDebug() << "更新成功";
-            } else {
-                qDebug() << "更新失败";
-            }
-        }
-        else{
-            QMessageBox::information(this, "购票失败", "票已售空");
-        }
-        qDebug() << "用户购买";
-    } else {
-        // 用户点击了"否"
-        qDebug() << "用户取消";
-    }
+    //跳转选择乘客界面
+    QString noo = ui->no->text();
+    this->b = new buy;
+    this->b->show();
+    this->b->initialize(noo);
 }
+// int ret = QMessageBox::question(&window,
+//                                 "询问",
+//                                 "您确定要购买该火车票吗？",
+//                                 QMessageBox::Yes | QMessageBox::No,
+//                                 QMessageBox::No);
 
+// if (ret == QMessageBox::Yes) {
+//     // 用户点击了"是"
+//     QString noo = ui->no->text();
+//     QString caa = ui->ca->text();
+//     // 构建更新语句
+//     if(caa!="0"){
+//         QString query = QString("UPDATE train_info SET train_carriages = train_carriages - 1 WHERE train_no = '%1'")
+//         .arg(noo);
+//         QSqlQuery sql;
+//         if (sql.exec(query)) {
+//             qDebug() << "更新成功";
+//         } else {
+//             qDebug() << "更新失败";
+//         }
+//     }
+//     else{
+//         QMessageBox::information(this, "购票失败", "票已售空");
+//     }
+//     qDebug() << "用户购买";
+// } else {
+//     // 用户点击了"否"
+//     qDebug() << "用户取消";
+// }

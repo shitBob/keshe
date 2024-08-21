@@ -148,6 +148,9 @@
       <height>301</height>
      </rect>
     </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
    </widget>
    <widget class="QPushButton" name="back2">
     <property name="geometry">
@@ -173,6 +176,19 @@
     </property>
     <property name="text">
      <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>130</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>删除乘客</string>
     </property>
    </widget>
   </widget>

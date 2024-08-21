@@ -78,7 +78,11 @@
      </rect>
     </property>
     <property name="text">
+<<<<<<< HEAD
      <string>搜索</string>
+=======
+     <string>查询</string>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -97,10 +101,17 @@
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
       <x>40</x>
       <y>60</y>
       <width>521</width>
       <height>261</height>
+=======
+      <x>20</x>
+      <y>50</y>
+      <width>591</width>
+      <height>271</height>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
      </rect>
     </property>
     <property name="styleSheet">

@@ -67,7 +67,11 @@ void Modify::on_pushButton_clicked()
     } else {
         QMessageBox::critical(this, "修改失败", "更新出错: " + query.lastError().text());
     }
+}
 
-    emit this->back();
+
+void Modify::on_pushButton_2_clicked()
+{
+        emit this->back();
 }
 

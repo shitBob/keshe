@@ -14,10 +14,13 @@ class Query : public QMainWindow
 public:
     explicit Query(QWidget *parent = nullptr);
     ~Query();
+    void initialize();
 signals:
     void back();
 private slots:
     void on_back6_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::Query *ui;

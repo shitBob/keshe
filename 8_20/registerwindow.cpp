@@ -41,7 +41,7 @@ void RegisterWindow::on_Register_clicked()
         query.bindValue(":user_type", "0");
 
     if (query.exec()) {
-        QMessageBox::information(this, "注册成功", "注册成功，请登录");
+        QMessageBox::information(this, "注册成功", "注册成功，请返回登录");
     } else {
         QMessageBox::critical(this, "注册失败", "注册失败：" + query.lastError().text());
     }

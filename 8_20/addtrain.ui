@@ -27,7 +27,11 @@
      </rect>
     </property>
     <property name="text">
+<<<<<<< HEAD
      <string>列车号</string>
+=======
+     <string>添加</string>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
     </property>
    </widget>
    <widget class="QLineEdit" name="no">
@@ -69,7 +73,11 @@
      </rect>
     </property>
     <property name="text">
+<<<<<<< HEAD
      <string>出发时间</string>
+=======
+     <string>添加</string>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
     </property>
    </widget>
    <widget class="QLineEdit" name="start">
@@ -95,7 +103,11 @@
      </rect>
     </property>
     <property name="text">
+<<<<<<< HEAD
      <string>起始站</string>
+=======
+     <string>添加</string>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
     </property>
    </widget>
    <widget class="QLineEdit" name="end">
@@ -121,7 +133,11 @@
      </rect>
     </property>
     <property name="text">
+<<<<<<< HEAD
      <string>终点站</string>
+=======
+     <string>添加</string>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
     </property>
    </widget>
    <widget class="QLineEdit" name="ca">
@@ -147,16 +163,27 @@
      </rect>
     </property>
     <property name="text">
+<<<<<<< HEAD
      <string>剩余座位</string>
+=======
+     <string>添加</string>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
       <x>140</x>
       <y>260</y>
       <width>61</width>
       <height>21</height>
+=======
+      <x>230</x>
+      <y>240</y>
+      <width>56</width>
+      <height>18</height>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
      </rect>
     </property>
     <property name="text">
@@ -186,7 +213,11 @@
      </rect>
     </property>
     <property name="text">
+<<<<<<< HEAD
      <string>价格</string>
+=======
+     <string>添加</string>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
     </property>
    </widget>
    <widget class="QLineEdit" name="t">
@@ -215,7 +246,24 @@
      </rect>
     </property>
     <property name="text">
+<<<<<<< HEAD
      <string>车型</string>
+=======
+     <string>添加</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>240</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>返回</string>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
     </property>
    </widget>
   </widget>

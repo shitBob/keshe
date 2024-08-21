@@ -23,14 +23,20 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
       <x>110</x>
       <y>200</y>
       <width>81</width>
+=======
+      <x>90</x>
+      <y>180</y>
+      <width>61</width>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>返回/完成</string>
+     <string>完成</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="userNameLineEdit">
@@ -111,14 +117,32 @@
      <string>密码</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>180</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
+<<<<<<< HEAD
      <width>296</width>
      <height>22</height>
+=======
+     <width>326</width>
+     <height>18</height>
+>>>>>>> a08e7bcc0a91c1b2a96cdd820634e0adfbda35a5
     </rect>
    </property>
   </widget>

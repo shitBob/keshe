@@ -17,6 +17,7 @@ Menu::Menu(QWidget *parent)
     connect(ui->my,&QPushButton::clicked,[=](){
         this->hide();
         this->my->show();
+        my->initialize();
     });
     connect(this->booking,&Booking::back,[=](){
         this->booking->hide();

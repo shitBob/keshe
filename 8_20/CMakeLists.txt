@@ -39,6 +39,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         addtrain.h addtrain.cpp addtrain.ui
         modifytrain.h modifytrain.cpp modifytrain.ui
         add_passenger.h add_passenger.cpp add_passenger.ui
+        itemorder.h itemorder.cpp itemorder.ui
+        buy.h buy.cpp buy.ui
+        itembuy.h itembuy.cpp itembuy.ui
 
     )
 # Define target properties for Android with Qt 6 as:
