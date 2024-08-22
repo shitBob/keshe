@@ -6,22 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>420</width>
-    <height>60</height>
+    <width>600</width>
+    <height>68</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(248, 255, 254);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>530</x>
       <y>10</y>
       <width>56</width>
-      <height>18</height>
+      <height>20</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>购买</string>
@@ -30,10 +36,10 @@
    <widget class="QLabel" name="name">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>60</x>
       <y>10</y>
-      <width>40</width>
-      <height>12</height>
+      <width>51</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -46,10 +52,10 @@
    <widget class="QLabel" name="id">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>170</x>
       <y>10</y>
-      <width>40</width>
-      <height>12</height>
+      <width>101</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -62,10 +68,10 @@
    <widget class="QLabel" name="phone">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>330</x>
       <y>10</y>
-      <width>40</width>
-      <height>12</height>
+      <width>81</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -78,10 +84,10 @@
    <widget class="QLabel" name="no">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>450</x>
       <y>10</y>
-      <width>40</width>
-      <height>12</height>
+      <width>71</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -94,10 +100,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>10</x>
       <y>10</y>
-      <width>40</width>
-      <height>12</height>
+      <width>50</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -107,10 +113,10 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>120</x>
       <y>10</y>
-      <width>40</width>
-      <height>12</height>
+      <width>51</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -120,10 +126,10 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>280</x>
       <y>10</y>
-      <width>40</width>
-      <height>12</height>
+      <width>60</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -133,10 +139,10 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>420</x>
       <y>10</y>
       <width>40</width>
-      <height>12</height>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -149,7 +155,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>420</width>
+     <width>600</width>
      <height>18</height>
     </rect>
    </property>

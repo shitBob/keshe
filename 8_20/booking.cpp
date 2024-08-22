@@ -12,7 +12,10 @@
 Booking::Booking(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::Booking) {
     ui->setupUi(this);
-
+    ui->no->setPlaceholderText("查询车次");
+    ui->time->setPlaceholderText("查询出发时间");
+    ui->start->setPlaceholderText("查询起始站");
+    ui->end->setPlaceholderText("查询终点站");
 }
 
 Booking::~Booking() {

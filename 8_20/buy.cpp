@@ -37,7 +37,7 @@ void buy::initialize(QString no)
             itembuy * buyitem = new itembuy;
             buyitem->setbuy(name,noo,id,userphone);
             QListWidgetItem * item = new QListWidgetItem;
-            item->setSizeHint(QSize(243,80));
+            item->setSizeHint(QSize(600,68));
             ui->listWidget->addItem(item);
             ui->listWidget->setItemWidget(item,buyitem);
         }

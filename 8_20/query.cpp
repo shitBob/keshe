@@ -67,7 +67,7 @@ void Query::on_pushButton_clicked()
                 itemorder * orderitem = new itemorder;
                 orderitem->setTrainInfo(name,no,type,time,start,end,price,o_id);
                 QListWidgetItem * item = new QListWidgetItem;
-                item->setSizeHint(QSize(631,75));
+                item->setSizeHint(QSize(850,75));
                 ui->listWidget->addItem(item);
                 ui->listWidget->setItemWidget(item,orderitem);
             }
@@ -113,7 +113,7 @@ void Query::initialize(){
                 itemorder * orderitem = new itemorder;
                 orderitem->setTrainInfo(name,no,type,time,start,end,price,o_id);
                 QListWidgetItem * item = new QListWidgetItem;
-                item->setSizeHint(QSize(631,75));
+                item->setSizeHint(QSize(850,75));
                 ui->listWidget->addItem(item);
                 ui->listWidget->setItemWidget(item,orderitem);
             }

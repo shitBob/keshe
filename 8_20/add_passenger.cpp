@@ -7,7 +7,6 @@
 #include <QSqlError>
 #include <QDebug>
 #include "globalusermanager.h"
-#include "my.h"
 add_passenger::add_passenger(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::add_passenger)

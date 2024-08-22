@@ -48,7 +48,7 @@ void Admin::initialize()
         itemAdmin * trainitem = new itemAdmin;
         trainitem->setTrainInfo(no,type,time,start,end,price,carriage);
         QListWidgetItem * item = new QListWidgetItem;
-        item->setSizeHint(QSize(629,79));
+        item->setSizeHint(QSize(800,79));
         ui->listWidget->addItem(item);
         ui->listWidget->setItemWidget(item,trainitem);
 
@@ -83,7 +83,7 @@ void Admin::on_pushButton_2_clicked()
         itemAdmin * trainitem = new itemAdmin;
         trainitem->setTrainInfo(no,type,time,start,end,price,carriage);
         QListWidgetItem * item = new QListWidgetItem;
-        item->setSizeHint(QSize(629,79));
+        item->setSizeHint(QSize(800,79));
         ui->listWidget->addItem(item);
         ui->listWidget->setItemWidget(item,trainitem);
 
